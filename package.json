@@ -1,5 +1,6 @@
 {
   "name": "stud2",
+  "homepage": "https://github.com/gurugovind2601-beep/Student-CRUD-Application.git",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,7 +23,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server --watch ./src/db.json --port 3001"
+    "server": "json-server --watch ./src/db.json --port 3001",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "json-server": "^1.0.0-beta.15"
   }
 }
